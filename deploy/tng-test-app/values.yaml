@@ -1,0 +1,28 @@
+# Default values for java-barebones-spring-template.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+
+deployment:
+  java-barebones-spring-template:
+    types:
+      - spring
+    replicaCount: 1
+    image:
+      repository: au/java-barebones-spring-template
+      tag: "{{ $.Values.image.tag }}"
+    springCloud:
+      boot2: true
+      reloadStrategy: refresh
+      configMaps:
+        - spring
+    resources:
+      limits:
+        cpu: 2
+        memory: 1Gi
+      requests:
+        cpu: 500m
+        memory: 1Gi
+    java:
+      jvmOpts: "-Xms512M -Xmx512M -XX:+UseG1GC"
+

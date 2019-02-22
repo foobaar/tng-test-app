@@ -1,0 +1,8 @@
+# Application properties are stored in the helm chart within the infrastructure folder.
+# A symlink should have been created if the install script was run.
+
+# Universal properties
+
+spring.jackson.property-naming-strategy: LOWER_CAMEL_CASE
+au:
+  your-property: some-value

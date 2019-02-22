@@ -1,0 +1,9 @@
+apiVersion: v1
+description: A Helm chart for Kubernetes
+name: tng-test-app
+version: 0.0.1
+sources:
+- https://github.com/autonomic-ai/java-barebones-spring-template
+maintainers:
+- name: Enter Your Name
+- name: Enter another maintainer

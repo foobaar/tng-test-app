@@ -1,0 +1,5 @@
+# Dev specific settings
+# logging.level changes take effect without restarting the pod
+logging.level:
+  org.springframework.boot.autoconfigure.logging: DEBUG
+  com.autonomic: INFO
