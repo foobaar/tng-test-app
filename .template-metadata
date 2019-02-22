@@ -1,0 +1,4 @@
+templated-from:
+- commit-sha: 5c607611149af700490e9650899493b735bc58bf
+  template-name: java-barebones-spring-template
+date-created: '2019-02-22'
